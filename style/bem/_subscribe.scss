@@ -1,0 +1,109 @@
+.b-subscribe{
+  width: 50%;
+  @media (max-width: 767.98px){
+    width: 100%;
+  }
+    &_start {
+      font-family: $spaceGrotesk;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 140%;
+      color: #000;
+      @media (min-width: 768px) and (max-width: 998px)
+      {
+        font-size: 18px;
+      }
+      @media (max-width: 767.98px){
+        font-size: 16px;
+      }
+       &__position {
+         margin-bottom: 20px;
+         @media (min-width: 768px) and (max-width: 998px)
+         {
+           margin-bottom: 16px;
+         }
+       }
+    }
+    &_date {
+      font-size: 16px;
+      line-height: 170%;
+      color: $forText;
+      font-family: $helveticaNeue;
+      @media (min-width: 768px) and (max-width: 998px)
+      {
+        font-size: 14px;
+      }
+      @media (max-width: 767.98px){
+        font-size: 12px;
+      }
+
+      &__position {
+        margin-left: 14px;
+        @media (max-width: 998px)
+        {
+          margin-left: 8px;
+        }
+      }
+    }
+    &_description {
+      font-family: $helveticaNeue;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 170%;
+      color: $forText;
+      @media (max-width: 998px)
+      {
+        font-size: 16px;
+      }
+      &__position {
+        margin-bottom: 20px;
+        margin-top: 48px;
+        @media (max-width: 998px) {
+          margin-top: 32px;
+        }
+        @media (max-width: 767.98px){
+          margin-bottom: 32px;
+        }
+      }
+    }
+    &_form {
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 998px) {
+        margin-top: 32px;
+      }
+
+    }
+    &_input {
+      border: none;
+      outline: none;
+      border-bottom: 1px solid black;
+      height: 64px;
+      font-size: 16px;
+      @media (max-width: 998px){
+        font-size: 14px;
+      }
+    }
+    &_button {
+      background: #fff;
+      border: none;
+      height: 64px;
+      font-family: $spaceGrotesk;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 110%;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: #000000;
+      align-self: flex-start;
+      @media (max-width: 998px){
+        font-size: 20px;
+      }
+
+      &__position {
+        margin-top: 31px;
+      }
+    }
+}

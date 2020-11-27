@@ -1,0 +1,64 @@
+@import "variables";
+@import "bem/logo";
+@import "bem/subscribe";
+@import "bem/product";
+@import "bem/ptofile";
+
+body {
+  margin: 0 auto;
+  font-family: $helveticaNeue;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 850px;
+
+}
+main{
+  max-width: 1270px;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+}
+.item {
+  display: flex;
+  @media (max-width: 767.98px){
+    flex-direction: column;
+  }
+}
+.formContainer{
+  @media (max-width: 998px)
+  {
+    display: none;
+  }
+}
+article{
+  width: 50%;
+  @media (max-width: 767.98px){
+    width: 100%;
+  }
+}
+.formContain{
+  @media (min-width: 999px){
+    display: none;
+  }
+}
+.one{
+  margin-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
+  @media (max-width: 767.98px){
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+.two {
+  padding-right: 32px;
+  padding-left: 32px;
+  @media (max-width: 767.98px){
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

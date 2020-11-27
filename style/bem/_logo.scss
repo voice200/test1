@@ -1,0 +1,29 @@
+.b-logo {
+  font-family: $spaceGrotesk;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: $grey;
+  display: inline-block;
+
+  @media (min-width: 768px) and (max-width: 998px)
+  {
+    font-size: 36px;
+  }
+  @media (max-width: 767.98px){
+    font-size: 30px;
+  }
+
+  &__position {
+    margin-top: 95px ;
+    margin-bottom: 47px ;
+    @media (min-width: 768px) and (max-width: 998px)
+    {
+      margin-top: 76px;
+    }
+  }
+  &__colorBlue{
+    background: #1519FF;
+  }
+}

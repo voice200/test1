@@ -1,0 +1,124 @@
+.b-product {
+  min-height: 370px;
+  background: $backgroundProduct;
+  padding: 48px;
+  @media (min-width: 768px) and (max-width: 998px)
+  {
+    min-height: 247px;
+    padding: 16px 32px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    width: 70%;
+    margin: 0 auto ;
+    min-height: 239px;
+  }
+  @media (max-width: 575px) {
+    min-height: 239px;
+  }
+
+   &_label{
+     font-size: 16px;
+     line-height: 170%;
+     color: $forText;
+     @media (min-width: 768px) and (max-width: 998px) {
+       font-size: 14px;
+     }
+     @media (max-width: 767.98px){
+       font-size: 12px;
+     }
+
+     &__position {
+       margin-bottom: 32px;
+       @media (min-width: 768px) and (max-width: 998px) {
+         margin-bottom: 20px;
+       }
+       @media (max-width: 767.98px){
+         margin-bottom: 24px;
+       }
+     }
+   }
+   &_price {
+     font-size: 52px;
+     line-height: 100%;
+     @media (min-width: 768px) and (max-width: 998px) {
+       font-size: 32px;
+     }
+     @media (max-width: 767.98px){
+       font-size: 30px;
+     }
+   }
+   &_discount{
+     background: #FEF653;
+     display: flex;
+     flex-direction: column;
+     padding: 10px 20px;
+     margin-left: 48px;
+     @media (min-width: 768px) and (max-width: 998px) {
+       margin-left: 18px;
+     }
+     @media (min-width: 768px) and (max-width: 998px) {
+       margin-left: 16px;
+     }
+   }
+   &_priceContainer{
+     display: flex;
+   }
+   &_sale {
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 140%;
+     @media (min-width: 768px) and (max-width: 998px) {
+       font-size: 16px;
+     }
+     @media (max-width: 768px) {
+       font-size: 14px;
+     }
+   }
+   &_adInfo{
+     font-size: 14px;
+     line-height: 140%;
+     color: $forText;
+     @media (min-width: 768px) and (max-width: 998px) {
+       font-size: 10px;
+     }
+     @media (max-width: 768px) {
+       font-size: 8px;
+     }
+   }
+   &_subTitle {
+     font-size: 24px;
+     line-height: 170%;
+     @media (max-width: 998px) {
+       font-size: 16px;
+     }
+   }
+   &_withoutDiscount {
+     font-size: 14px;
+     line-height: 140%;
+     color: $forText;
+     @media (min-width: 768px) and (max-width: 998px) {
+       font-size: 10px;
+     }
+     @media (max-width: 768px) {
+       font-size: 8px;
+     }
+
+     &__position {
+       margin-top: 24px;
+       margin-bottom: 4px;
+     }
+   }
+   &_oldPrice {
+     font-size: 24px;
+     line-height: 170%;
+     color: $forText;
+     text-decoration: line-through;
+     @media (min-width: 768px) and (max-width: 998px)
+     {
+       font-size: 16px;
+     }
+     @media (max-width: 768px) {
+       font-size: 24px;
+     }
+   }
+}
